@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="resources/hexgame.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="resources/hexgame_plugin.js"></script>
+        <script type="text/javascript" src="resources/hexgame.js"></script>
+        <title>Hexxed!</title>
+    </head>
+    <body>
+        <h1>Hexxed!</h1>
+        <h2>Guess the Color!</h2>
+        <div class='info'>
+        <p>Difficulty: <select id='difficulty'></select> Total Rounds: <select id='turns'></select></p>
+        <p id='score'></p>
+        <p id='round'></p>
+        </div>
+        <div id="square1"></div>
+        <div id="sliders">
+            <div class="slidecontainer">
+                <input type="range" min="0" max="255" value="0" id="redslide">
+                <select id="redval"></select>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="255" value="0" id="greenslide">
+                <select id="greenval"></select>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="255" value="0" id="blueslide">
+                <select id="blueval"></select>
+            </div>
+        </div>
+        <div id="square2"></div>
+        <button id='checkIt'>Check it</button>
+    </body>
+</html>
